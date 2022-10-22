@@ -47,12 +47,19 @@ Console.WriteLine($"Длина отрезка  {segmentLength}");
 */
 
 // Задача 23. Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
-/*
-Console.Write("Введите число N: ");
-int num = Convert.ToInt32(Console.ReadLine());
-for (int i = 1; i <= num; i++) 
+
+
+void cubes (int N)
 {
-    Console.Write($"{Math.Pow(i, 3)}, ");
+    int num=1;
+    while (num <= N)
+    {
+        double cube = Math.Pow(num,3 );
+        Console.WriteLine ( cube );
+        num++;
+    }
 }
-Console.WriteLine(" ");
-*/
+
+Console.Write ("Input number N ");
+int N = Convert.ToInt32(Console.ReadLine());
+cubes(N);
