@@ -23,7 +23,7 @@ else
 
 // Задача 21. Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
 /*
-double Decision (double xa, double xb, double ya, double yb, double za, double zb)
+double Distance (double xa, double xb, double ya, double yb, double za, double zb)
 {
     return Math.Sqrt(Math.Pow(xb - xa, 2) + Math.Pow(yb - ya, 2) + Math.Pow(zb - za, 2));
 }
@@ -41,14 +41,15 @@ double za = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine("Input zb: ");
 double zb = Convert.ToDouble(Console.ReadLine());
 
-double segmentLength =  Math.Round (Decision(xa, xb, ya, yb, za, zb), 2 );
+double dist =  Distance (xa, xb, ya, yb, za, zb);
 
-Console.WriteLine($"Длина отрезка  {segmentLength}");
+Console.WriteLine($"Distance {dist}");
 */
+
 
 // Задача 23. Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
 
-
+/*
 void cubes (int N)
 {
     int num=1;
@@ -63,3 +64,4 @@ void cubes (int N)
 Console.Write ("Input number N ");
 int N = Convert.ToInt32(Console.ReadLine());
 cubes(N);
+*/
